@@ -9,6 +9,32 @@ export async function queryAllList(params?: TableListQueryParams): Promise<any> 
   });
 }
 
+export async function getTopicDetailById(id?: number | string): Promise<any> {
+  return request({
+    url: '/v1/topic/getTopicDetailById',
+    method: 'get',
+    params: {
+      id,
+    },
+  });
+}
+
+export async function getClassify(params?: any): Promise<any> {
+  return request({
+    url: '/v1/classify/getAllClassify',
+    method: 'get',
+    params,
+  });
+}
+
+export async function deleteTopic(id: number): Promise<any> {
+  return request({
+    url: `/v1/classify/delTopic`,
+    method: 'delete',
+    params:{id}
+  });
+}
+
 export async function queryList(params?: TableListQueryParams): Promise<any> {
   return request({
     url: '/pages/list',

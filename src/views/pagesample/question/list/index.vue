@@ -32,13 +32,13 @@
           <a-tag v-if="record.type === 'header'" color="green">头部</a-tag>
           <a-tag v-else color="cyan">底部</a-tag>
         </template>
+        <template #answer="{ record }">
+          <!-- :loading="detailUpdateLoading.includes(record.id)" -->
+          <a-button type="link" @click="() => viewDetail(record.id)">查看</a-button>
+        </template>
         <template #action="{ record }">
-          <a-button
-            type="link"
-            @click="() => detailUpdateData(record.id)"
-            :loading="detailUpdateLoading.includes(record.id)"
-            >编辑</a-button
-          >
+          <!-- :loading="detailUpdateLoading.includes(record.id)" -->
+          <a-button type="link" @click="() => detailUpdateData(record.id)">编辑</a-button>
           <a-button
             type="link"
             @click="() => deleteTableData(record.id)"
@@ -47,6 +47,8 @@
           >
         </template>
       </a-table>
+
+      <PreviewTopic ref="topicDrawer" :topicId="topicId"></PreviewTopic>
 
       <create-form
         :visible="createFormVisible"
@@ -75,7 +77,9 @@
   import UpdateForm from './components/UpdateForm.vue';
   import { StateType as ListStateType } from './store';
   import { PaginationConfig, TableListItem } from './data.d';
-  import { queryAllList } from './service';
+  import { queryAllList, deleteTopic } from './service';
+  import { useRouter } from 'vue-router';
+  import PreviewTopic from './components/PreviewTopic.vue';
 
   interface ListTablePageSetupData {
     columns: any;
@@ -109,10 +113,15 @@
     components: {
       CreateForm,
       UpdateForm,
+      PreviewTopic,
     },
-    setup(): ListTablePageSetupData {
+    setup() {
       const store = useStore<{ ListTable: ListStateType }>();
+      const router = useRouter();
+      const topicDrawer = ref(null);
       const allData: Ref<any> = ref({});
+      const topicId: Ref<number> = ref(0);
+
       // 列表数据
       const list = computed<TableListItem[]>(() => allData.value?.list);
 
@@ -151,6 +160,13 @@
           title: '名称',
           dataIndex: 'title',
           slots: { customRender: 'title' },
+        },
+        {
+          title: '答案',
+          key: 'answer',
+          align: 'center',
+          width: 100,
+          slots: { customRender: 'answer' },
         },
         {
           title: '收藏',
@@ -246,14 +262,21 @@
 
       // 编辑弹框 data
       const updateData = computed<Partial<TableListItem>>(() => store.state.ListTable.updateData);
-      const detailUpdateLoading = ref<number[]>([]);
+      // const detailUpdateLoading = ref<number[]>([]);
       const detailUpdateData = async (id: number) => {
-        detailUpdateLoading.value = [id];
-        const res: boolean = await store.dispatch('ListTable/queryUpdateData', id);
-        if (res === true) {
-          setUpdateFormVisible(true);
-        }
-        detailUpdateLoading.value = [];
+        // detailUpdateLoading.value = [id];
+        // const res: boolean = await store.dispatch('ListTable/queryUpdateData', id);
+        // if (res === true) {
+        //   setUpdateFormVisible(true);
+        // }
+        // detailUpdateLoading.value = [];
+        console.log('id', id);
+        router.push({
+          path: '/pagesample/question/add',
+          query: {
+            id,
+          },
+        });
       };
 
       // 删除 loading
@@ -267,19 +290,25 @@
           cancelText: '取消',
           onOk: async () => {
             deleteLoading.value = [id];
-            const res: boolean = await store.dispatch('ListTable/deleteTableData', id);
-            if (res === true) {
+            const res = await deleteTopic(id);
+            if (+res.code === 0) {
               message.success('删除成功！');
-              getList(pagination.value.current);
+              getAllList(pagination.value.current);
             }
             deleteLoading.value = [];
           },
         });
       };
 
+      const viewDetail = (id) => {
+        topicId.value = id;
+        (topicDrawer.value as any)?.showDrawer(id);
+      };
+
       onMounted(() => {
         getList(1);
         getAllList(1);
+        console.log('ref', topicDrawer.value);
       });
 
       return {
@@ -292,7 +321,6 @@
         setCreateFormVisible,
         createSubmitLoading,
         createSubmit,
-        detailUpdateLoading,
         detailUpdateData,
         updateData,
         updateFormVisible,
@@ -301,6 +329,9 @@
         updateSubmit,
         deleteLoading,
         deleteTableData,
+        viewDetail,
+        topicDrawer,
+        topicId,
       };
     },
   });

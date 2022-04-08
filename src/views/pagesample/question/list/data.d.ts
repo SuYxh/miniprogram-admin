@@ -1,6 +1,7 @@
 export interface TableListQueryParams {
-  page: number;
-  per: number;
+  page?: number;
+  per?: number;
+  pageSize?: number;
 }
 
 export interface PaginationConfig {
