@@ -21,7 +21,7 @@
         :pagination="{
           ...pagination,
           onChange: (page) => {
-            getList(page);
+            getAllList(page);
           },
         }"
       >
@@ -148,8 +148,8 @@
           title: '序号',
           dataIndex: 'id',
           width: 80,
-          //   customRender: ({ text, index }: { text: any; index: number }) =>
-          //     (pagination.value.current - 1) * pagination.value.pageSize + index + 1,
+          customRender: ({ text, index }: { text: any; index: number }) =>
+            (pagination.value.current - 1) * pagination.value.pageSize + index + 1,
         },
         {
           title: '分类',
@@ -317,6 +317,7 @@
         pagination,
         loading,
         getList,
+        getAllList,
         createFormVisible,
         setCreateFormVisible,
         createSubmitLoading,
