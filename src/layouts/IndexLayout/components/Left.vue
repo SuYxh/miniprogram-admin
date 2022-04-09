@@ -3,7 +3,7 @@
         <div class="indexlayout-left-logo">
             <router-link to="/" class="logo-url">
                 <img v-if="collapsed" alt="Vue logo" src="../../../assets/images/logo.png" width="30">
-                <h3 v-else class="logo-title">AdminAntdVue</h3>
+                <h3 v-else class="logo-title">mini</h3>
             </router-link>
         </div>
         <div class="indexlayout-left-menu">
