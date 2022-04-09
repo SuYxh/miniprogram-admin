@@ -68,7 +68,7 @@ mock[`GET ${VITE_APP_APIHOST || ''}/pages/list`] = (req, res) => {
           id: '@integer(1)',
           'name|1': ['个人博客', '网页小功能'],
           'desc|1': ['李庆松的个人博客', '原创定制最好的网页插件小功能'],
-          'href|1': ['http://liqingsong.cc', 'http://wyxgn.com'],
+          'href|1': ['http://Jarvis.cc', 'http://wyxgn.com'],
           'type|1': ['header', 'footer'],
         },
       ],
@@ -104,7 +104,7 @@ mock[`GET ${VITE_APP_APIHOST || ''}/pages/list/*`] = (req, res) => {
       id: '@integer(1)',
       'name|1': ['个人博客', '网页小功能'],
       'desc|1': ['李庆松的个人博客', '原创定制最好的网页插件小功能'],
-      'href|1': ['http://liqingsong.cc', 'http://wyxgn.com'],
+      'href|1': ['http://Jarvis.cc', 'http://wyxgn.com'],
       'type|1': ['header', 'footer'],
     }),
   });

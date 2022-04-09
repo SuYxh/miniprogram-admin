@@ -1,6 +1,6 @@
 /**
  * 自定义 request 网络请求工具,基于axios
- * @author LiQingSong
+ * @author Jarvis
  */
 import axios, { AxiosPromise, AxiosRequestConfig, AxiosResponse } from 'axios';
 import { notification } from "ant-design-vue";

@@ -1,6 +1,6 @@
 /**
  * 设置 html Title  composables
- * @author LiQingSong
+ * @author Jarvis
  */
 import { ComputedRef, onMounted, Ref, watch } from 'vue';
 import { useI18n } from 'vue-i18n';

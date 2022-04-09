@@ -4,7 +4,7 @@
 <script lang="ts">
 /**
  * IndexLayout icon , 主要用于菜单
- * @author LiQingSong
+ * @author Jarvis
  * 使用说明：
  *   >>> 在这里可以对以下字体图标进行引入替换，达到 IndexLayout icon 统一效果：
  *     import Icons from '@/components/IconSvg';

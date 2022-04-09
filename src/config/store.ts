@@ -1,6 +1,6 @@
 /**
  * Store 入口
- * @author LiQingSong
+ * @author Jarvis
  */
 import { createStore } from 'vuex';
 import { importAllStore } from '@/utils/store';

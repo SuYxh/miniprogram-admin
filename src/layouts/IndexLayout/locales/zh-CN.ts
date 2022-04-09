@@ -5,7 +5,7 @@ export default {
   'index-layout.menu.home': '首页',
   'index-layout.menu.home.workplace': '工作台',
   'index-layout.menu.home.custom-breadcrumbs': '自定义面包屑',
-  'index-layout.menu.home.custom-breadcrumbs.liqingsong.cc': 'liqingsong.cc',
+  'index-layout.menu.home.custom-breadcrumbs.Jarvis.cc': 'Jarvis.cc',
   'index-layout.menu.home.docs': '使用文档',
 
   'index-layout.menu.component': '组件',

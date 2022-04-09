@@ -23,7 +23,7 @@ const IndexLayoutRoutes: Array<RoutesDataItem> = [
       {
         icon: 'detail',
         title: 'index-layout.menu.home.docs',
-        path: 'http://admin-antd-vue.liqingsong.cc/',
+        path: 'http://admin-antd-vue.Jarvis.cc/',
         belongTopMenu: '/home',
         redirect: '',
       },

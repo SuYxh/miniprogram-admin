@@ -1,6 +1,6 @@
 /**
  * 设置 IndexLayout TopMenuWidth
- * @author LiQingSong
+ * @author Jarvis
  */
 import { ComputedRef, onMounted, Ref, ref, watch, nextTick } from 'vue';
 

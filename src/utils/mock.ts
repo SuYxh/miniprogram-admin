@@ -31,7 +31,7 @@ export function bodyParse(req: Connect.IncomingMessage) {
 
 /**
  * 删除 mock 文件缓存
- * @author LiQingSong
+ * @author Jarvis
  */
 export function unRegisterMock(mockDirPath: string = mockDir) {
     Object.keys(require.cache).forEach(i => {
@@ -43,7 +43,7 @@ export function unRegisterMock(mockDirPath: string = mockDir) {
 
 /**
  * 加载所有mock文件内容
- * @author LiQingSong
+ * @author Jarvis
  */
 export function loadAllMock(mockDirPath: string = mockDir) {
     const mocks:any = [];
@@ -89,7 +89,7 @@ export function loadAllMock(mockDirPath: string = mockDir) {
 
 /**
  * Mock Vite Plugin
- * @author LiQingSong
+ * @author Jarvis
  */
 export function vitePluginMock(): Plugin {
 

@@ -1,6 +1,6 @@
 /**
  * 自定义指令 权限验证
- * @author LiQingSong
+ * @author Jarvis
  * 使用Demo：
  *      import permission from '@/directives/permission';
  *      import { defineComponent } from "vue";

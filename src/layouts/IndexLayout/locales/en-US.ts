@@ -5,7 +5,7 @@ export default {
   'index-layout.menu.home': 'Home',
   'index-layout.menu.home.workplace': 'Workplace',
   'index-layout.menu.home.custom-breadcrumbs': 'Custom bread crumbs',
-  'index-layout.menu.home.custom-breadcrumbs.liqingsong.cc': 'liqingsong.cc',
+  'index-layout.menu.home.custom-breadcrumbs.Jarvis.cc': 'Jarvis.cc',
   'index-layout.menu.home.docs': 'Using document',
 
   'index-layout.menu.component': 'Component',

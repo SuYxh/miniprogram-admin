@@ -1,6 +1,6 @@
 /**
  * 国际化 utils
- * @author LiQingSong
+ * @author Jarvis
  */
 import * as path from "path";
 import { ViteDevServer, Plugin } from "vite";
@@ -16,7 +16,7 @@ export const defaultLang = 'zh-CN';
 /**
  * 验证语言命名规则 zh-CN
  * @returns boolen
- * @author LiQingSong
+ * @author Jarvis
  */
 export const localeNameExp = (lang: string): boolean => {
     const localeExp = new RegExp(`^([a-z]{2})-?([A-Z]{2})?$`);
@@ -26,7 +26,7 @@ export const localeNameExp = (lang: string): boolean => {
 /**
  * 设置 html lang 属性值
  * @param lang 语言的 key
- * @author LiQingSong
+ * @author Jarvis
  */
 export const setHtmlLang = (lang: string) => {
     /**
@@ -40,7 +40,7 @@ export const setHtmlLang = (lang: string) => {
  * 获取当前选择的语言
  * 获取的浏览器语言默认项目中有可能不支持，所以在config/i18n.ts中要加以判断
  * @returns string
- * @author LiQingSong
+ * @author Jarvis
  */
 export const getLocale = (): string => {   
     const lang = typeof window.localStorage !== 'undefined' ? window.localStorage.getItem(localeKey) : '';    
@@ -53,7 +53,7 @@ export const getLocale = (): string => {
  * 切换语言
  * @param lang 语言的 key
  * @param realReload 是否刷新页面，默认刷新
- * @author LiQingSong
+ * @author Jarvis
  */
 export const setLocale = (lang: string, realReload = true, callback: Function) => {
   
@@ -81,7 +81,7 @@ export const setLocale = (lang: string, realReload = true, callback: Function) =
 
 /**
  * 自动导入 框架自定义语言
- * @author LiQingSong
+ * @author Jarvis
  */
 export function importAllLocales(): LocaleMessages<VueMessageType> {
     const modules: LocaleMessages<VueMessageType> = {};
@@ -172,7 +172,7 @@ export function importAllLocales(): LocaleMessages<VueMessageType> {
 
 /**
  * 验证 Locales 位置
- * @author LiQingSong
+ * @author Jarvis
  */
 export function validateLocalesPath(filePath: string): boolean {
 
@@ -201,7 +201,7 @@ export function validateLocalesPath(filePath: string): boolean {
 
 /**
  * Locales Vite Plugin
- * @author LiQingSong
+ * @author Jarvis
  */
 export function vitePluginLocales(): Plugin {
 

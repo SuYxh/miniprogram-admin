@@ -2,7 +2,7 @@ import { RoutesDataItem } from "@/utils/routes";
 
 /**
  * 站点配置
- * @author LiQingSong
+ * @author Jarvis
  */
 export interface SettingsType {
     /**

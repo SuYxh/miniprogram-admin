@@ -6,7 +6,7 @@
 
 **注意：Demo 用的是在线mock服务，不稳定，若在线登录不了pull到本地可直接运行查看demo**
 
-| **[http://vite-demo.admin-antd-vue.liqingsong.cc](http://vite-demo.admin-antd-vue.liqingsong.cc/)**             |
+| **[http://vite-demo.admin-antd-vue.Jarvis.cc](http://vite-demo.admin-antd-vue.Jarvis.cc/)**             |
 :-------------------------:
 | ![Home](https://gitee.com/lqsong/public/raw/master/admin-antd-vue/home.png)  |
 | ![Home](https://gitee.com/lqsong/public/raw/master/admin-antd-vue/home2.png)  |
@@ -21,7 +21,7 @@
 
 ## 使用文档
 
- - [http://admin-antd-vue.liqingsong.cc](http://admin-antd-vue.liqingsong.cc/)
+ - [http://admin-antd-vue.Jarvis.cc](http://admin-antd-vue.Jarvis.cc/)
  - [Github](https://github.com/lqsong/admin-antd-vue/tree/vite) 
  - [Gitee](https://gitee.com/lqsong/admin-antd-vue/tree/vite)
 
@@ -104,7 +104,7 @@ or
 $ npm install
 ```
 
-> 推荐使用 yarn , **[yarn安装与常用命令](http://liqingsong.cc/article/detail/9)** 。
+> 推荐使用 yarn , **[yarn安装与常用命令](http://Jarvis.cc/article/detail/9)** 。
 
 ### 二、Compiles and hot-reloads for development
 
@@ -169,5 +169,5 @@ npm run test
 
 **ALIPAY**             |  **WECHAT**
 :-------------------------:|:-------------------------:
-![Alipay](http://uploads.liqingsong.cc/20210430/f62d2436-8d92-407d-977f-35f1e4b891fc.png)  |  ![Wechat](http://uploads.liqingsong.cc/20210430/3e24efa9-8e79-4606-9bd9-8215ce1235ac.png)
+![Alipay](http://uploads.Jarvis.cc/20210430/f62d2436-8d92-407d-977f-35f1e4b891fc.png)  |  ![Wechat](http://uploads.Jarvis.cc/20210430/3e24efa9-8e79-4606-9bd9-8215ce1235ac.png)
 

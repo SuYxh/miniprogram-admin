@@ -1,6 +1,6 @@
 /**
  * Store utils
- * @author LiQingSong
+ * @author Jarvis
  */
 import * as path from "path";
 import { ViteDevServer, Plugin } from 'vite';
@@ -10,7 +10,7 @@ import { Module, ModuleTree } from 'vuex';
  * 自定义项目 Store Module 类型
  * 为自动导入的 store 做类型限制
  * [@/store文件夹下定义的 store]与[@/views文件夹下定义的`文件store.ts`] 必须继承此类型
- * @author LiQingSong
+ * @author Jarvis
  */
 export interface StoreModuleType<S> extends Module<S, S> {
   namespaced: true;
@@ -19,7 +19,7 @@ export interface StoreModuleType<S> extends Module<S, S> {
 
 /**
  * 自动导入 Store
- * @author LiQingSong
+ * @author Jarvis
  */
 export function importAllStore<S> (): ModuleTree<S> {
     const modules: ModuleTree<S> = {};
@@ -59,7 +59,7 @@ export function importAllStore<S> (): ModuleTree<S> {
 
 /**
  * 验证 Store 位置
- * @author LiQingSong
+ * @author Jarvis
  */
 export function validateStorePath(filePath: string): boolean {
 
@@ -83,7 +83,7 @@ export function validateStorePath(filePath: string): boolean {
 
 /**
  * Stroe Vite Plugin
- * @author LiQingSong
+ * @author Jarvis
  */
 export function vitePluginStore(): Plugin {
 

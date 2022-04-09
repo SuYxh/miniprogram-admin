@@ -1,6 +1,6 @@
 /**
  * 自定义 token 操作
- * @author LiQingSong
+ * @author Jarvis
  */
 import localforage from 'localforage';
 import settings from '@/config/settings';

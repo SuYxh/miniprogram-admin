@@ -1,6 +1,6 @@
 /**
  * 重置 Antd Form VaildateInfos 为 I18n
- * @author LiQingSong
+ * @author Jarvis
  */
 import { computed, ComputedRef } from 'vue';
 import { useI18n } from 'vue-i18n';

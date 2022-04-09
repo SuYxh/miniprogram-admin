@@ -3,7 +3,7 @@ import path from 'path';
 
 /**
  * nodejs 加载 .env
- * @author LiQingSong
+ * @author Jarvis
  */
 export function setNodeEnv(NODE_ENV: string, envFile: string = path.resolve(__dirname, '../../.env')) {
 
