@@ -43,4 +43,12 @@ export default {
   'index-layout.menu.roles.all': '用户都有权限',
   'index-layout.menu.roles.user': 'Users有权限',
   'index-layout.menu.roles.test': 'Tests有权限',
+
+  'index-layout.menu.classify': '分类',
+  'index-layout.menu.classify.list': '所有分类',
+  'index-layout.menu.classify.add': '添加分类',
+
+  'index-layout.menu.question': '题库',
+  'index-layout.menu.question.list': '所有题目',
+  'index-layout.menu.question.add': '添加题目',
 };

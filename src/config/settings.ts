@@ -53,7 +53,7 @@ export interface SettingsType {
   
 const settings: SettingsType = {
     siteTitle: 'ADMIN-ANTD-VUE',
-    topNavEnable: true,
+    topNavEnable: false,
     headFixed: true,
     tabNavEnable: true,
     homeRouteItem: {
