@@ -43,12 +43,12 @@ const IndexLayoutRoutes: Array<RoutesDataItem> = [
         path: 'list',
         component: () => import('@/views/classify/list/index.vue'),
       },
-      {
-        icon: 'detail',
-        title: 'index-layout.menu.classify.add',
-        path: 'add',
-        component: () => import('@/views/classify/add/index.vue'),
-      },
+      // {
+      //   icon: 'detail',
+      //   title: 'index-layout.menu.classify.add',
+      //   path: 'add',
+      //   component: () => import('@/views/classify/add/index.vue'),
+      // },
     ],
   },
   // 题目相关路由
