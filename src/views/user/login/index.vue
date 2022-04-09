@@ -109,7 +109,6 @@
         submitLoading.value = true;
         try {
           const fieldsValue = await validate<LoginParamsType>();
-          console.log('fieldsValue', fieldsValue);
           if (fieldsValue.username !== 'jarvis' && fieldsValue.password !== 'X@fHVxQzNy49') {
             message.warning(t('app.global.form.validatefields.catch'));
             submitLoading.value = false;
