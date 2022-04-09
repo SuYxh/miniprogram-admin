@@ -1,41 +1,5 @@
-# admin-antd-vue-vite
+# mini-antd-vue-vite
 
-此分支是 Vite + Vue3.x + antd 版本 ， Webpack 版本请查看 main (分支)（[github](https://github.com/lqsong/admin-antd-vue/tree/main)、[gitee](https://gitee.com/lqsong/admin-antd-vue/tree/main)）
-
-## Demo
-
-**注意：Demo 用的是在线mock服务，不稳定，若在线登录不了pull到本地可直接运行查看demo**
-
-| **[http://vite-demo.admin-antd-vue.Jarvis.cc](http://vite-demo.admin-antd-vue.Jarvis.cc/)**             |
-:-------------------------:
-| ![Home](https://gitee.com/lqsong/public/raw/master/admin-antd-vue/home.png)  |
-| ![Home](https://gitee.com/lqsong/public/raw/master/admin-antd-vue/home2.png)  |
-
-
-
-## Vue3实战案例
-
-- lqsblog-frontend-admin-vue（[Github](https://github.com/lqsong/lqsblog-frontend-admin-vue) 、 [Gitee](https://gitee.com/lqsong/lqsblog-frontend-admin-vue)）
-
-
-
-## 使用文档
-
- - [http://admin-antd-vue.Jarvis.cc](http://admin-antd-vue.Jarvis.cc/)
- - [Github](https://github.com/lqsong/admin-antd-vue/tree/vite) 
- - [Gitee](https://gitee.com/lqsong/admin-antd-vue/tree/vite)
-
-
-## 后台前端解决方案列表
-
- - admin-element-vue（[GitHub](https://github.com/lqsong/admin-element-vue)、[Gitee](https://gitee.com/lqsong/admin-element-vue)）
- - admin-antd-vue（[GitHub](https://github.com/lqsong/admin-antd-vue)、[Gitee](https://gitee.com/lqsong/admin-antd-vue)）
- - admin-antd-react（[GitHub](https://github.com/lqsong/admin-antd-react)、[Gitee](https://gitee.com/lqsong/admin-antd-react)）
- - electron-admin-element-vue（[GitHub](https://github.com/lqsong/electron-admin-element-vue)、[Gitee](https://gitee.com/lqsong/electron-admin-element-vue)）
- - electron-admin-antd-vue（[GitHub](https://github.com/lqsong/electron-admin-antd-vue)、[Gitee](https://gitee.com/lqsong/electron-admin-antd-vue)）
- - electron-admin-antd-react（[GitHub](https://github.com/lqsong/electron-admin-antd-react)、[Gitee](https://gitee.com/lqsong/electron-admin-antd-react)）
- - admin-vue3-micro-qiankun（[GitHub](https://github.com/lqsong/admin-vue3-micro-qiankun)、[Gitee](https://gitee.com/lqsong/admin-vue3-micro-qiankun)）
- 
 
 ## 功能
 
@@ -79,15 +43,6 @@
       - 表格详情
   - 权限验证
 ```
-
-
-## 自定义配置
-
-### **(建议)** 本地或开发模式下，不要直接修改 '.env.development'
-复制 '.env.development' 重命名为 ' .env.development.local' , 修改对应的参数.
-
-### **(建议)** 生产模式下，不要直接修改 '.env.production'
-复制 '.env.production' 重命名为 ' .env.production.local' , 修改对应的参数.
 
 
 ## 项目设置
@@ -161,13 +116,4 @@ yarn test
 
 npm run test
 ```
-
-
-## 捐赠
-
-如果你觉得这个项目帮助到了你，请帮助点击 Star，你也可以请作者喝咖啡表示鼓励.
-
-**ALIPAY**             |  **WECHAT**
-:-------------------------:|:-------------------------:
-![Alipay](http://uploads.Jarvis.cc/20210430/f62d2436-8d92-407d-977f-35f1e4b891fc.png)  |  ![Wechat](http://uploads.Jarvis.cc/20210430/3e24efa9-8e79-4606-9bd9-8215ce1235ac.png)
 
