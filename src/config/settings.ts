@@ -52,7 +52,7 @@ export interface SettingsType {
 }
   
 const settings: SettingsType = {
-    siteTitle: 'ADMIN-ANTD-VUE',
+    siteTitle: 'mini',
     topNavEnable: false,
     headFixed: true,
     tabNavEnable: true,
