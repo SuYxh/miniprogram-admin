@@ -2,7 +2,8 @@
   <div class="indexlayout-main-conent">
     <a-card :bordered="false">
       <template #title>
-        <a-button type="primary" @click="() => setCreateFormVisible(true)">新增</a-button>
+        <!-- <a-button type="primary" @click="() => setCreateFormVisible(true)">新增</a-button> -->
+        <h4>All Question</h4>
       </template>
       <template #extra>
         <a-radio-group defaultValue="all">
